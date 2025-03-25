@@ -6,6 +6,7 @@
         <title>Academics</title>
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link href="./dist/output.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
         <!-- Google Fonts (Poppins) -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,23 +63,25 @@
             </div>
             <div class="sidebar">
                 <!-- Sidebar content - USING TAILWIND HERE -->
-            
-                <img src="images/academics1.jpg" alt="Music Page Sidebar Image" class="w-full mb-4 rounded-lg">
-        
-                <!-- Certificates inside the sidebar, using a grid -->
-                
-                <div class="flex flex-col items-center gap-4 w-full bg-yellow-400 border-4 border-black p-1">
-                    <a href="images/flute-certificate1.jpg" class="w-[100px] h-[100px] inline-block">
-                        <img src="images/flute-certificate1-thumb.jpg" alt="Certificate 1" class="w-full h-full object-contain border-2 border-black rounded-lg">
-                    </a>
-                    <a href="images/flute-certificate1.jpg" class="w-[100px] h-[100px] inline-block">
-                        <img src="images/flute-certificate1-thumb.jpg" alt="Certificate 1" class="w-full h-full object-contain border-2 border-black rounded-lg">
-                    </a>
-                    <a href="images/flute-certificate2.jpg" class="w-[100px] h-[100px] inline-block">
-                        <img src="images/flute-certificate2-thumb.jpg" alt="Certificate 3" class="w-full h-full object-contain border-2 border-black rounded-lg">
-                    </a>
-                </div>
-                 
+                    <img src="images/academics1.jpg" alt="Music Page Sidebar Image" class="w-full mb-4 rounded-lg">
+                    <!-- Certificates inside the sidebar, using a grid -->
+                    <div class="flex flex-row items-center justify-center gap-4 w-full p-1">
+                        <!-- Image 1 with modal -->
+                        <a href="#" onclick="openModal('images/flute-certificate1.jpg'); return false;" class="w-[150px] h-[150px] inline-block">
+                            <img src="images/flute-certificate1-thumb.jpg" alt="Certificate 1" class="w-full h-full object-contain border-2 border-black rounded-lg">
+                        </a>
+                    
+                        <!-- Image 2 with modal -->
+                        <a href="#" onclick="openModal('images/flute-certificate1.jpg'); return false;" class="w-[150px] h-[150px] inline-block">
+                            <img src="images/flute-certificate1-thumb.jpg" alt="Certificate 2" class="w-full h-full object-contain border-2 border-black rounded-lg">
+                        </a>
+                    
+                        <!-- Image 3 with modal -->
+                        <a href="#" onclick="openModal('images/flute-certificate2.jpg'); return false;" class="w-[150px] h-[150px] inline-block">
+                            <img src="images/flute-certificate2-thumb.jpg" alt="Certificate 3" class="w-full h-full object-contain border-2 border-black rounded-lg">
+                        </a>
+                    </div>
+                    
                     <div class="button-wrapper">
                     <div class="sidebar-button-container">
                     <a href="#" class="home-button">Top</a>
@@ -87,7 +90,7 @@
                     <a href="index.html" class="home-button">Home</a>
                     </div>
                     </div>
-                </div>
+            </div>
             </div>
         </section>
     </main>
@@ -104,7 +107,18 @@
             </div>
           </div>
         </footer>
+<!-- Image Modal (Place this once in your main HTML file) -->
+<div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden">
+    <div class="relative max-w-[90vw] max-h-[90vh] overflow-hidden">
+        <!-- Large Image -->
+        <img id="modalImage" src="" class="max-w-full max-h-screen rounded-lg">
 
+        <!-- Close Button -->
+        <button onclick="closeModal()" class="absolute bottom-4 right-4 bg-red-400  text-white text-xl font-bold px-4 py-2 rounded-full shadow-lg hover:bg-slate-400 transition duration-200 z-50">
+            ✕
+        </button>
+    </div>
+</div>
     <script src="js/script.js"></script>
 </body>
 </html>
