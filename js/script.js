@@ -19,6 +19,46 @@ document.addEventListener('DOMContentLoaded', function() {
             changeNavColor(initialNavColor);
         }
     }
+    // Create and insert the tooltip div dynamically
+    const tooltip = document.createElement("div");
+    tooltip.id = "tooltip";
+    tooltip.className = "tooltip";
+    document.body.appendChild(tooltip); // Append to body so it's available globally
+
+    navLinks.forEach(link => {
+        link.addEventListener('mouseenter', function (event) {
+            const description = this.getAttribute('data-description');
+            if (description) {
+                tooltip.textContent = description;
+                tooltip.style.display = 'block';
+                tooltip.style.opacity = '1';
+
+                // Position the tooltip near the hovered link
+                const rect = this.getBoundingClientRect();
+                tooltip.style.left = `${rect.left + window.scrollX}px`;
+                tooltip.style.top = `${rect.bottom + window.scrollY + 5}px`;
+
+                // Hide after 3 seconds
+                //timeout = setTimeout(() => {
+                //    tooltip.style.opacity = '0';
+                //    setTimeout(() => tooltip.style.display = 'none', 300);
+                //}, 3000);
+            }
+        });
+
+        link.addEventListener("mousemove", function (event) {
+            tooltip.style.left = `${event.pageX + 10}px`;
+            tooltip.style.top = `${event.pageY + 10}px`;
+        });
+
+        link.addEventListener('mouseleave', function () {
+            //clearTimeout(timeout);
+            //tooltip.style.opacity = '0';
+            //setTimeout(() => tooltip.style.display = 'none', 300);
+            tooltip.style.display = "none";
+        });
+    });
+
 
     navLinks.forEach(link => {
         let originalText = link.textContent;
