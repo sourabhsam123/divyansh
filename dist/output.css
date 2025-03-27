@@ -1142,7 +1142,7 @@ nav a.active {
   color: black;
   /* Dark text for contrast */
   padding: 8px 12px;
-  border-radius: 6px;
+  border-radius: 10px;
   font-size: 14px;
   max-width: 200px;
   /* Limit width for multiline */
