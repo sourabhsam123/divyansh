@@ -893,11 +893,9 @@ video {
   /* Corrected animation application */
 }
 
-/*img {
-  max-height: none;
-  max-width: 100%;
-  height: auto;
-}*/
+img {
+  border: 1px solid black;
+}
 
 /* --- Hero Section --- */
 
