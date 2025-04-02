@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const description = this.getAttribute('data-description');
             if (description) {
                 tooltip.textContent = description;
-                tooltip.style.display = 'block';
+                tooltip.style.display = 'flex';
                 tooltip.style.opacity = '1';
 
                 // Position the tooltip near the hovered link
