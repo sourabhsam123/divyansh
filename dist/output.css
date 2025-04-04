@@ -904,7 +904,7 @@ img {
 /* --- Hero Section --- */
 
 #hero h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
   width: 100%;
   text-align: left;
   font-size: 2.25rem;
@@ -917,7 +917,7 @@ img {
 }
 
 #hero p {
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
   width: 100%;
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -926,7 +926,7 @@ img {
 }
 
 #hero ul {
-  margin-bottom: 2rem;
+  margin-bottom: 0.25rem;
   width: 100%;
   list-style-position: inside;
   list-style-type: disc;
@@ -936,7 +936,7 @@ img {
 }
 
 #hero h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
   width: 100%;
   font-size: 1.5rem;
   line-height: 2rem;
