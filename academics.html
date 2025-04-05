@@ -31,7 +31,6 @@
                 </nav>
             </div>
         </header>
-
     <main>
         <section id="mission-banner">
             <h2 id="mission-text">The best way to predict your future is to create it - Abraham Lincoln.</h2>
@@ -47,7 +46,7 @@
                         
                     </div>
                         <section id="highlights" class="text-center">
-                            <h2 class="font-playfair italic font-normal mb-1 text-2xl">Highlights</h2>
+                            <h2 class="font-sans font-bold text-black mb-1 text-2xl">Highlights</h2>
                                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                                     <!-- Example Highlight 1 -->
                                     <div onclick="openTextModal('textmodal')" class="bg-gray-300 p-4 rounded-lg shadow-md transition-transform duration-300 hover:-translate-y-2 cursor-pointer">
@@ -64,10 +63,10 @@
                                         <h3 class="text-lg font-semibold">IB</h3>
                                     </div>
                                 </div>
-                                <!-- Modal Background (Overlay) -->
+                                <!-- textmoda Modal Background (Overlay) -->
                                 <div id="textmodal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
                                     <!-- Modal Content -->
-                                    <div class="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-3xl relative">
+                                    <div class="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-3xl relative max-h-[80vh] overflow-x-hidden overflow-y-auto">
                                         <!-- Close Button -->
                                         <button onclick="closeTextModal('textmodal')" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
 
@@ -96,10 +95,10 @@
                                     <h3 class="text-lg font-semibold">COMPETIONS</h3>
                                 </div> 
                             </div>
-                            <!-- Modal Background (Overlay) -->
+                            <!-- textmodal2 Modal Background (Overlay) -->
                             <div id="textmodal2" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
                                 <!-- Modal Content -->
-                                <div class="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-3xl relative max-h-[90vh] overflow-x-hidden overflow-y-auto">
+                                <div class="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-3xl relative max-h-[80vh] overflow-x-hidden overflow-y-auto">
                                     <!-- Close Button -->
                                     <button onclick="closeTextModal('textmodal2')" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
                             
@@ -173,10 +172,10 @@
                 </div>
                     <div class="button-wrapper">
                     <div class="sidebar-button-container">
-                    <a href="#" class="home-button">Top</a>
+                    <a href="#" class="home-button font-bold">Top</a>
                     </div>
                     <div class="sidebar-button-container">
-                    <a href="index.html" class="home-button">Home</a>
+                    <a href="index.html" class="home-button font-bold">Home</a>
                     </div>
                     </div>
             </div>

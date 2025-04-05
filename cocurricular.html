@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cocurricular</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="./dist/output.css" rel="stylesheet">
-    <!-- No Google Fonts link needed here if you're only using your custom font and Open Sans -->
-     <!-- Google Fonts (Open Sans) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comunity</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link href="./dist/output.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Google Fonts (Poppins) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    </head>
 <body class="cocurricular-page">
     <header class="header">
         <div class="left"></div> <!-- Left navy blue section -->
@@ -42,25 +42,128 @@
         <section id="content-area">
             <div class="container max-w-none w-[100%] mx-auto">
                 <div class="main-content w-3/5">
-                <h1 class="text-3xl font-bold text-black mb-4 uppercase tracking-wider">cocurricular</h1>
-            
-                <h2>This is where I'll showcase my cocurricular work including:</h2>
-                <ul>
-                    <li>My major and minor fields of study.</li>
-                    <li>Relevant coursework and projects.</li>
-                    <li>GPA and academic honors (if applicable).</li>
-                    <li>Academic transcripts (if appropriate - be mindful of privacy).</li>
-                    <li>Information about my educational institution.</li>
-                </ul>
+                    <section id="hero">
+                        <div class="hero-text">
+                            <h1 class="text-3xl font-bold text-black mb-4 uppercase tracking-wider">EXTRA CURRICULAM :</h1>
+                            <p class="text-gray-700 leading-relaxed text-left ml-2">
+                                Extracurriculars have been a source of constant impetus to be a better version of myself. I have been highly active in the extra curricular sphere and made sure I am exposed to a range of tasks and initiatives that allow me to progress as a wholesome individual and not just an overtly academic student. </p>
+                            <section id="highlights">
+                                <h2>EXTRA CURRICULAR ACTIVITIES</h2>
+                                <!-- <span class="font-bold text-white">Blank Line</span> -->
+                               
+                                <div class="highlight-grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+                                    <!-- Example Highlight 1 -->
+                                    <div onclick="openTextModal('textmodal1')" class="highlight h-20 bg-gray-300 p-2 rounded-lg shadow-md transition-transform duration-300 hover:-translate-y-2 cursor-pointer">
+                                        <h3 class="text-lg font-semibold">Ted ED Club – Active speaker</h3>
+                                        
+                                    </div>
+                                    <!-- <a href="research_project_1.html" class="highlight-link">
+                                    <div class="highlight h-44">
+                                        <h3>Project-1</h3>
+                                        <p>Fishtank Sensor System,  real-time temperature and pH monitoring system for the school’s fish tank.</p>
+                                    </div>
+                                    </a> -->
+                    
+                                    <!-- Example Highlight 2 -->
+                                    <div onclick="openTextModal('textmodal2')" class="highlight h-20 bg-gray-300 p-2 rounded-lg shadow-md transition-transform duration-300 hover:-translate-y-2 cursor-pointer">
+                                        <h3 class="text-lg font-semibold">Badminton Team</h3>
+                                        
+                                    </div>
+                                    <!-- Example Highlight 3 -->
+                                    <div onclick="openTextModal('textmodal3')" class="highlight h-20 bg-gray-300 p-2 rounded-lg shadow-md transition-transform duration-300 hover:-translate-y-2 cursor-pointer">
+                                        <h3 class="text-lg font-semibold">Chess Club</h3>
+                                        
+                                    </div>
+                                    
+                                    <!-- Example Highlight 4 -->
+                                    <div onclick="openTextModal('textmodal4')" class="highlight h-20 bg-gray-300 p-2 rounded-lg shadow-md transition-transform duration-300 hover:-translate-y-2 cursor-pointer">
+                                        <h3 class="text-lg font-semibold">Maths Circle</h3>
+                                        
+                                    </div>
+    
+                                    <!-- Add more highlights as needed -->
+                                </div>
+                                <!-- textmodal1 Background (Overlay) -->
+                                <div id="textmodal1" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
+                                    <!-- Modal Content -->
+                                    <div class="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-3xl relative max-h-[80vh] overflow-x-hidden overflow-y-auto">
+                                        <!-- Close Button -->
+                                        <button onclick="closeTextModal('textmodal1')" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
+    
+                                        <h2 class="text-2xl font-bold mb-3 text-gray-900">Ted ED Club – Active speaker</h2>
+                                        <p class="text-gray-700 leading-relaxed text-left ml-1">
+                                            Since Grade 9, I have been an active member of my school’s TED-Ed Club, where I have had the opportunity to refine my public speaking and communication skills. Over the years, I have delivered two TED Talks—one addressing the critical issue of mental health and another, more technical in nature, based on my research paper. These experiences have significantly enhanced my ability to structure speeches effectively and engage an audience with confidence.  
+                                        </p>
+                                        <p class="text-gray-700 leading-relaxed text-left ml-1">
+                                            Participating in the club has involved various activities, such as delivering impromptu speeches, engaging in peer feedback sessions, and ultimately presenting polished talks to a wider audience. Initially, the idea of standing in front of a large crowd felt intimidating, but with consistent practice and exposure, I have grown increasingly comfortable with public speaking. This journey has not only improved my confidence but has also strengthened my ability to articulate complex ideas clearly and persuasively. 
+                                        </p>
+                                        <p class="text-gray-700 leading-relaxed text-left ml-1">
+                                            Beyond my personal growth, I have also had the privilege of mentoring fellow students within the club. Whether it was helping them structure their speeches, refine their delivery, or overcome stage fright, I found great satisfaction in guiding others through the same challenges I once faced. Encouraging and supporting my peers has reinforced my belief in the power of effective communication and its ability to inspire change. Through my involvement in TED-Ed, I have not only developed a valuable skill set but have also contributed to fostering a culture of confident expression and meaningful dialogue within my school community.
+                                        </p>
+                                        <button onclick="closeTextModal('textmodal1')" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">X</button>
+                                    </div>
+                                </div>
+                
+                                <!-- textmodal2 Background (Overlay) -->
+                                <div id="textmodal2" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
+                                    <!-- Modal Content -->
+                                    <div class="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-3xl relative max-h-[80vh] overflow-x-hidden overflow-y-auto">
+                                        <!-- Close Button -->
+                                        <button onclick="closeTextModal('textmodal2')" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
+    
+                                        <h2 class="text-2xl font-sans font-bold mb-3 text-gray-900">Badminton Team</h2>
+                                        <p class="text-gray-700 leading-relaxed text-left ml-1">
+                                            As a dedicated member of my school’s ACSIS A badminton team, I have been actively competing since Grade 6. Playing at a competitive level has not only allowed me to refine my technical skills, such as footwork, shot placement, and reflexes, but has also pushed me to develop mental resilience under pressure.
+                                        </p>
+                                        <p class="text-gray-700 leading-relaxed text-left ml-1">
+                                            Beyond the physical and technical aspects, being part of the team has reinforced the importance of teamwork and sportsmanship. Encouraging my teammates, strategising doubles plays, and maintaining high morale during matches are all essential components of our success. The fast-paced rallies and intense matchups make every game a thrilling experience, requiring both endurance and adaptability. Through rigorous training and competitive play, I have grown both as an athlete and as an individual, learning valuable lessons in discipline, perseverance, and collaboration—qualities that extend far beyond the badminton court.
+                                        </p>
+                                        <button onclick="closeTextModal('textmodal2')" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">X</button>
+                                    </div>
+                                </div>
+    
+                             <!-- textmodal3 Background (Overlay) -->
+                             <div id="textmodal3" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
+                                <!-- Modal Content -->
+                                <div class="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-3xl relative max-h-[80vh] overflow-x-hidden overflow-y-auto">
+                                    <!-- Close Button -->
+                                    <button onclick="closeTextModal('textmodal3')" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
+    
+                                    <h2 class="text-2xl font-sans font-bold mb-3 text-gray-900">Chess Club</h2>
+                                    <p class="text-gray-700 leading-relaxed text-left ml-1">
+                                        Just a hobby of mine that I partake in whenever I have free time. During the club we look at different puzzles which we try solving, play against each other and watch videos to improve our chess skills. Overall a fun way to spend time learning new skills with friends and trying to add a competitive and learning aspect alongside.
+                                    </p>                                
+                                    <button onclick="closeTextModal('textmodal3')" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">X</button>
+                                </div>
+                            </div>
+    
+                            <!-- textmodal4 Background (Overlay) -->
+                            <div id="textmodal4" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
+                                <!-- Modal Content -->
+                                <div class="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-3xl relative max-h-[80vh] overflow-x-hidden overflow-y-auto">
+                                    <!-- Close Button -->
+                                    <button onclick="closeTextModal('textmodal4')" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
+    
+                                    <h2 class="text-2xl font-sans font-bold mb-3 text-gray-900">Maths Circle</h2>
+                                    <p class="text-gray-700 leading-relaxed text-left ml-1">
+                                        From a young age, I have always challenged myself beyond the standard school curriculum, constantly looking for opportunities to explore mathematics in greater depth. Maths Circle has allowed me to do just that. In addition to learning about real-world applications of mathematics, I take an active role in leading discussions and working with fellow students to tackle such complex problems. The topics we explore extend far beyond IB mathematics, encouraging us to think outside the box, an approach similar to that when engaging in competitive Olympiads. I have been able to refine my problem-solving abilities and develop a more intuitive grasp of mathematical reasoning. More importantly, I enjoy fostering a collaborative learning environment where I guide my peers through intricate problems and deriving elegant solutions. My involvement in Maths Circle has not only deepened my passion for mathematics but also reinforced my ability to apply logical reasoning to further my mathematical ability along with those around me.
+                                    </p>                     
+                                    <button onclick="closeTextModal('textmodal4')" class="mt-0 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">X</button>
+                                </div>
+                            </div>
+    
+                            </section>
+                        </div>
+                    </section>
                 </div>
-                <div class="sidebar w-2/5 p-4 rounded-lg text-center">
+                    <div class="sidebar w-2/5 p-4 rounded-lg text-center">
                     <!-- Sidebar content - USING TAILWIND HERE -->
                 
-                    <img src="images/cocurricular1.jpg" alt="Cocurricular Page Sidebar Image" class="w-full mb-4 rounded-lg">
+                    <img src="images/cocurricular2.jpg" alt="Cocurricular Page Sidebar Image" class="w-full mb-4 rounded-lg">
             
                     <!-- Certificates inside the sidebar, using a grid -->
                     
-                    <div class="flex justify-center items-center gap-4 bg-yellow-400 border-4 border-black p-2 overflow-hidden">
+                    <div class="flex justify-center items-center gap-4 p-2 overflow-hidden">
                         <div style="width: 150px; height: 150px;">
                         <img src="images/flute-certificate1-thumb.jpg" alt="Certificate 1" class="w-24 h-24 object-contain">
                         </div>
@@ -74,10 +177,10 @@
                     
                         <div class="button-wrapper">
                         <div class="sidebar-button-container">
-                        <a href="#" class="home-button">Top</a>
+                        <a href="#" class="home-button font-bold">Top</a>
                         </div>
                         <div class="sidebar-button-container">
-                        <a href="index.html" class="home-button">Home</a>
+                        <a href="index.html" class="home-button font-bold">Home</a>
                         </div>
                         </div>
                     </div>
@@ -98,6 +201,43 @@
           </div>
         </footer>
 
+<!-- JavaScript for Modal -->
+<script>
+    // Function to open the correct modal
+function openTextModal(modalId) {
+    let modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.remove("hidden");
+    }
+}
+
+// Function to close the correct modal
+function closeTextModal(modalId) {
+    let modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.add("hidden");
+    }
+}
+
+// Function to close modal when clicking outside the content
+function setupModalClose(modalId) {
+    let modal = document.getElementById(modalId);
+    if (modal) {
+        modal.addEventListener('click', function (event) {
+            if (event.target === modal) { 
+                closeTextModal(modalId);
+            }
+        });
+    }
+}
+
+// Apply event listener for modals
+setupModalClose("textmodal1");
+setupModalClose("textmodal2");
+setupModalClose("textmodal3");
+setupModalClose("textmodal4");
+
+</script>
     <script src="js/script.js"></script>
 </body>
 </html>
