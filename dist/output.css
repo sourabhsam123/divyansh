@@ -754,11 +754,6 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
-.text-gray-700 {
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity, 1));
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
@@ -917,7 +912,7 @@ img {
 }
 
 #hero p {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0px;
   width: 100%;
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1040,12 +1035,13 @@ nav a.active {
 }
 
 #highlights h2 {
-  margin-bottom: 1rem;
-  font-family: 'Playfair Display', serif;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 400;
-  font-style: italic;
+  margin-bottom: 0.5rem;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
 .highlight-grid {
