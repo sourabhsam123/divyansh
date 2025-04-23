@@ -92,7 +92,7 @@
                                 </div>
                             <div class="grid grid-cols-6 gap-4">
                                 <div onclick="openTextModal('textmodal2')" class="col-span-4 col-start-2 bg-gray-300 mt-4 mb-1 p-4 rounded-lg shadow-md transition-transform duration-300 hover:-translate-y-2 cursor-pointer hover:bg-blue-300">
-                                    <h3 class="text-lg font-semibold">COMPETIONS</h3>
+                                    <h3 class="text-lg font-semibold">COMPETITIONS</h3>
                                 </div> 
                             </div>
                             <!-- textmodal2 Modal Background (Overlay) -->
@@ -144,31 +144,33 @@
                     <!-- Certificates inside the sidebar, using a grid -->
                     <div class="flex flex-row items-center justify-center gap-4 w-full p-1">
                         <!-- Image 1 with modal -->
-                        <a href="#" onclick="openModal('images/flute-certificate1.jpg'); return false;" class="w-[150px] h-[150px] inline-block">
-                            <img src="images/flute-certificate1-thumb.jpg" alt="Certificate 1" class="w-full h-full object-contain border-2 border-black rounded-lg">
+                        <a href="#" onclick="openModal('images/certificates/igcse1.jpeg'); return false;" class="w-[150px] h-[150px] inline-block">
+                            <img src="images/certificates/igcse1.jpeg" alt="Certificate 1" class="w-full h-full object-contain border-2 border-black rounded-lg">
                         </a>
                     
                         <!-- Image 2 with modal -->
-                        <a href="#" onclick="openModal('images/flute-certificate1.jpg'); return false;" class="w-[150px] h-[150px] inline-block">
-                            <img src="images/flute-certificate1-thumb.jpg" alt="Certificate 2" class="w-full h-full object-contain border-2 border-black rounded-lg">
+                        <a href="#" onclick="openModal('images/certificates/maths5.jpeg'); return false;" class="w-[150px] h-[150px] inline-block">
+                            <img src="images/certificates/maths5.jpeg" alt="Certificate 2" class="w-full h-full object-contain border-2 border-black rounded-lg">
                         </a>
                     
                         <!-- Image 3 with modal -->
-                        <a href="#" onclick="openModal('images/flute-certificate2.jpg'); return false;" class="w-[150px] h-[150px] inline-block">
-                            <img src="images/flute-certificate2-thumb.jpg" alt="Certificate 3" class="w-full h-full object-contain border-2 border-black rounded-lg">
+                        <a href="#" onclick="openModal('images/certificates/maths6.jpeg'); return false;" class="w-[150px] h-[150px] inline-block">
+                            <img src="images/certificates/maths6.jpeg" alt="Certificate 3" class="w-full h-full object-contain border-2 border-black rounded-lg">
                         </a>
                     </div>
                     <!-- Image Modal (Place this once in your main HTML file) -->
                 <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden">
-                    <div class="relative max-w-[90vw] max-h-[90vh] overflow-hidden">
-                        <!-- Large Image -->
-                        <img id="modalImage" src="" class="max-w-full max-h-screen rounded-lg">
+                    <div class="group relative max-w-[90vw] max-h-[84vh] overflow-hidden">
+                        <!-- Scrollable container that shows scrollbar on hover -->
+                          <div class="overflow-y-hidden group-hover:overflow-y-auto max-h-[84vh]">
+                          <img id="modalImage" src="" class="max-w-full max-h-screen rounded-md">
+                          </div>
 
-                        <!-- Close Button -->
-                        <button onclick="closeModal()" class="absolute top-1 right-1 bg-blue-600  text-white text-xs font-bold px-3 py-2 rounded-full shadow-lg hover:bg-slate-400 transition duration-200 z-50">
-                            ✕
-                        </button>
-                    </div>
+                      <!-- Close Button -->
+                          <button onclick="closeModal()" class="absolute top-1 right-1 bg-blue-600  text-white text-xs font-bold px-3 py-2 rounded-full shadow-lg hover:bg-slate-400 transition duration-200 z-50">
+                          ✕
+                          </button>
+                      </div>
                 </div>
                     <div class="button-wrapper">
                     <div class="sidebar-button-container">
