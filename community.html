@@ -41,7 +41,7 @@
 
         <section id="content-area">
             <div class="container max-w-none w-[100%] mx-auto">
-                <div class="main-content max-w-none w-[100%] mx-auto">
+                <div class="main-content max-w-[830px] w-[100%] mx-auto">
                 <section id="hero">
                     <div class="hero-text">
                         <h1 class="text-3xl font-bold text-black mb-4 uppercase tracking-wider">Community Outreach</h1>
@@ -158,21 +158,34 @@
                 <div class="sidebar w-2/5 p-4 rounded-lg text-center">
                     <!-- Sidebar content - USING TAILWIND HERE -->
                 
-                    <img src="images/community1.jpg" alt="Community Page Sidebar Image" class="w-full mb-4 rounded-lg">
+                    <img src="images/community.jpg" alt="Community Page Sidebar Image" class="w-full mb-4 rounded-lg">
             
                     <!-- Certificates inside the sidebar, using a grid -->
                     
                     <div class="flex justify-center items-center gap-4 p-2 overflow-hidden">
-                        <div style="width: 150px; height: 150px;">
-                        <img src="images/flute-certificate1-thumb.jpg" alt="Certificate 1" class="w-24 h-24 object-contain">
-                        </div>
-                        <div style="width: 150px; height: 150px;">
-                        <img src="images/flute-certificate1-thumb.jpg" alt="Certificate 2" class="w-24 h-24 object-contain">
-                        </div>
-                        <div style="width: 150px; height: 150px;">
-                        <img src="images/flute-certificate2-thumb.jpg" alt="Certificate 3" class="w-24 h-24 object-contain">
+                        
+                        <!-- Image 1 with modal -->
+                        <a href="#" onclick="openModal('images/certificates/ro.jpeg'); return false;" class="w-[180px] h-[280px] inline-block">
+                            <img src="images/certificates/ro.jpeg" alt="RO Certificate 2" class="w-24 h-24 object-contain">
+                        </a>
+                        
+                    </div>
+                    
+                    <!-- Image Modal (Place this once in your main HTML file) -->
+                    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden">
+                        <div class="group relative max-w-[90vw] max-h-[82vh] overflow-hidden">
+                          <!-- Scrollable container that shows scrollbar on hover -->
+                            <div class="overflow-y-hidden group-hover:overflow-y-auto max-h-[82vh]">
+                            <img id="modalImage" src="" class="max-w-full max-h-screen rounded-lg">
+                            </div>
+
+                        <!-- Close Button -->
+                            <button onclick="closeModal()" class="absolute top-1 right-1 bg-blue-600  text-white text-xs font-bold px-3 py-2 rounded-full shadow-lg hover:bg-slate-400 transition duration-200 z-50">
+                            ✕
+                            </button>
                         </div>
                     </div>
+
                     <div class="flex justify-end gap-8 mt-auto p-4">
                         <a href="#" class="home-button font-bold !inline-block !w-auto px-6 py-2">Top</a>
                         <a href="index.html" class="home-button font-bold !inline-block !w-auto px-6 py-2">Home</a>
