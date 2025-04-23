@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comunity</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link href="./dist/output.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Google Fonts (Poppins) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    </head>
+<body class="community-page">
+    <header class="header">
+        <div class="left"></div> <!-- Left navy blue section -->
+        <div class="center">
+        <div class="header-background"></div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html" data-description="GRIHA is a Sanskrit word meaning &quot; HOME - A place of comfort & peace. &quot;" data-english="Home" data-mission="Welcome to my portfolio!" data-color="#fff">GRIHA</a></li>
+                <li><a href="academics.html"  data-description="SHIKSHA is a Sanskrit word meaning &quot; Academics - to acquire knowledge &quot;." data-english="Academics" data-mission="The best way to predict your future is to create it - Abraham Lincoln." data-color="#fff">SHIKSHA</a></li>
+                <li><a href="music.html"  data-description="BANSURI is a Sanskrit word meaning &quot; Flute the sacred instrument of Lord Krishna, linked to spiritual awakening &quot;." data-english="Flute" data-mission="Expressing creativity and passion through music." data-color="#fff">BANSURI</a></li>
+                <li><a href="taekwondo.html"  data-description="" data-english="TAEKWONDO" data-mission="The more I learn, the more I realise how much I still have to learn - Taekwondo A life long journey." data-color="#fff">Taekwondo</a></li>
+                <li><a href="community.html"  data-description="SEVA is a Sanskrit word meaning &quot; To Serve - Community &quot;." data-english="Community Outreach" data-mission="When you learn, teach. When you get, give - Maya Angelou." data-color="#fff" class="active">SEVA</a></li>
+                <li><a href="cocurricular.html"  data-description="SAH-PATHYAKRAM is a Sanskrit word meaning &quot; Co-curricular - to excel in Co-curricular activities&quot;." data-english="Co-curricular" data-mission="Showcasing my Co-curricular accomplishments." data-color="#fff">SAH-PATHYAKRAM</a></li>
+                <li><a href="research.html"  data-description="ANUSANDHAN is a Sanskrit word meaning &quot; Research - to find the unknown &quot;." data-english="Research" data-mission="Somewhere, something incredible is waiting to be known." data-color="#fff">ANUSANDHAN</a></li>
+                <li><a href="internship.html"  data-description="PRASHIKSHAN is a Sanskrit word meaning &quot; Internship - A professional learning experience offering meaningful, practical work &quot;." data-english="Internship" data-mission="Gaining experience and knowledge through internships." data-color="#fff">PRASHIKSHAN</a></li>
+                
+                </ul>
+        </nav>
+        </div>
+        <div class="right"></div> <!-- Right navy blue section -->
+    </header>
+
+    <main>
+        <section id="mission-banner">
+            <h2 id="mission-text">When you learn, teach. When you get, give - Maya Angelou.</h2>
+        </section>
+
+        <section id="content-area">
+            <div class="container max-w-none w-[100%] mx-auto">
+                <div class="main-content max-w-[830px] w-[100%] mx-auto">
+                <section id="hero">
+                    <div class="hero-text">
+                        <h1 class="text-3xl font-bold text-black mb-4 uppercase tracking-wider">Community Outreach</h1>
+                        <p class="text-gray-700 leading-relaxed text-justify mt-6 mb-2 ml-2">
+                            Reaching out to the community and being aware of one’s social responsibilities has always been precious for me as a student and as an individual. Each of these experiences has shaped me into a more inquisitive, adaptable, and socially conscious individual. Whether in academics, extracurriculars, or community work, I have always sought to push boundaries and embrace. </p>
+                        <section id="highlights">
+                            
+                            
+                            <!-- <span class="font-bold text-white">Blank Line</span> -->
+                           
+                            <div class="highlight-grid mt-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+                                <!-- Example Highlight 1 -->
+                                <div onclick="openTextModal('textmodal1')" class="highlight h-40 bg-gray-300 p-2 rounded-lg shadow-md transition-transform duration-300 hover:-translate-y-2 cursor-pointer hover:bg-blue-300">
+                                    <h3 class="text-lg font-semibold">Project-1</h3>
+                                    <p>FOUNDER - RO plant in Rajasthan School – India.</p>
+                                </div>
+                                <!-- <a href="research_project_1.html" class="highlight-link">
+                                <div class="highlight h-44">
+                                    <h3>Project-1</h3>
+                                    <p>Fishtank Sensor System,  real-time temperature and pH monitoring system for the school’s fish tank.</p>
+                                </div>
+                                </a> -->
+                
+                                <!-- Example Highlight 2 -->
+                                <div onclick="openTextModal('textmodal2')" class="highlight h-40 bg-gray-300 p-2 rounded-lg shadow-md transition-transform duration-300 hover:-translate-y-2 cursor-pointer hover:bg-blue-300">
+                                    <h3 class="text-lg font-semibold">Project-2</h3>
+                                    <p>CHAIR PERSON - Electronic Outreach for Seniors.</p>
+                                </div>
+                                <!-- Example Highlight 3 -->
+                                <div onclick="openTextModal('textmodal3')" class="highlight h-40 bg-gray-300 p-2 rounded-lg shadow-md transition-transform duration-300 hover:-translate-y-2 cursor-pointer hover:bg-blue-300">
+                                    <h3 class="text-lg font-semibold">Project-3</h3>
+                                    <p>VOLUNTEER - Willing Hearts.</p>
+                                </div>
+                                
+                                <!-- Example Highlight 4 -->
+                                <div onclick="openTextModal('textmodal4')" class="highlight h-40 bg-gray-300 p-2 rounded-lg shadow-md transition-transform duration-300 hover:-translate-y-2 cursor-pointer hover:bg-blue-300">
+                                    <h3 class="text-lg font-semibold">Project-4</h3>
+                                    <p>VOLUNTEER - Outreach for the Handicapped.</p>
+                                </div>
+
+                                <!-- Add more highlights as needed -->
+                            </div>
+                            <!-- textmodal1 Background (Overlay) -->
+                            <div id="textmodal1" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
+                                <!-- Modal Content -->
+                                <div class="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-3xl relative max-h-[80vh] overflow-x-hidden overflow-y-auto">
+                                    <!-- Close Button -->
+                                    <button onclick="closeTextModal('textmodal1')" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
+
+                                    <h2 class="text-2xl font-bold mb-3 text-gray-900">FOUNDER - RO plant in Rajasthan School – India</h2>
+                                    <p class="text-gray-700 leading-relaxed text-left ml-1">
+                                        During a visit to a local school in Pabana, Rajasthan, I witnessed firsthand the health risks that students and teachers faced due to a lack of access to clean drinking water. Recognising the urgent need for a solution, I decided to take initiative and personally fund the installation of a Reverse Osmosis Water Filtration Plant (Rs. 25,000).
+                                    </p>
+                                    <p class="text-gray-700 leading-relaxed text-left ml-1">
+                                        To raise the necessary funds, I performed flute concerts at local events and gatherings, dedicating my earnings toward this cause. After months of saving, I was able to contribute the full amount needed to set up the filtration system, ensuring that 270 students and teachers could access safe drinking water every day. Seeing the students and teachers finally drink clean water was an incredibly fulfilling moment, reinforcing my belief that even small actions can create a lasting impact.
+                                    </p>
+                                    <button onclick="closeTextModal('textmodal1')" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">X</button>
+                                </div>
+                            </div>
+            
+                            <!-- textmodal2 Background (Overlay) -->
+                            <div id="textmodal2" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
+                                <!-- Modal Content -->
+                                <div class="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-3xl relative max-h-[80vh] overflow-x-hidden overflow-y-auto">
+                                    <!-- Close Button -->
+                                    <button onclick="closeTextModal('textmodal2')" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
+
+                                    <h2 class="text-2xl font-sans font-bold mb-3 text-gray-900">CHAIR PERSON - Electronic Outreach for Seniors</h2>
+                                    <p class="text-gray-700 leading-relaxed text-left ml-1">
+                                        In Electronic Outreach with Seniors, we work with senior citizens and help them learn how to integrate electronics into fabrics and stitching. First and foremost, I have to go through sessions to help the student volunteers learn how to use the sewing machines and how to handle electronic equipment safely (as I am the chair). Then, when the senior citizens come by we introduce them to the volunteers who then help teach them how to operate the machines. We then transition into making a LED comfort emoji faced pillow using fabrics and a premade circuit allowing them to practically implement the skills they learnt. 
+                                    </p>
+                                    <p class="text-gray-700 leading-relaxed text-left ml-1">
+                                        After doing so we give them free choice to use their skills in different ways and create their own projects or create one of the suggested products which the student volunteers are fully trained in. Through this I have not only boosted my leadership and teaching skills but also my technical skills on how electronics work, sewing machines work and coming up with a baseline method to integrate both of them in practical everyday use objects which can be easily made by senior citizens. Each session is more than just a class—it’s a bridge between generations, fostering connections and mutual learning. Witnessing their excitement when they see their designs light up is a constant reminder of the joy of discovery, no matter one's age.
+                                    </p>
+                                    <button onclick="closeTextModal('textmodal2')" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">X</button>
+                                </div>
+                            </div>
+
+                         <!-- textmodal3 Background (Overlay) -->
+                         <div id="textmodal3" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
+                            <!-- Modal Content -->
+                            <div class="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-3xl relative max-h-[80vh] overflow-x-hidden overflow-y-auto">
+                                <!-- Close Button -->
+                                <button onclick="closeTextModal('textmodal3')" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
+
+                                <h2 class="text-2xl font-sans font-bold mb-3 text-gray-900">VOLUNTEER - Willing Hearts</h2>
+                                <p class="text-gray-700 leading-relaxed text-left ml-1">
+                                    Singapore's leading soup kitchen charity organisation, delivering free meals and other support services to the needy and marginalised. I had the opportunity to help with jobs such as cutting vegetables, peeling potatoes, washing the food and working with other volunteers. It was my way of trying to help migrant workers in need for their valuable contribution to Singapore.
+                                </p>                                
+                                <button onclick="closeTextModal('textmodal3')" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">X</button>
+                            </div>
+                        </div>
+
+                        <!-- textmodal4 Background (Overlay) -->
+                        <div id="textmodal4" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
+                            <!-- Modal Content -->
+                            <div class="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-3xl relative max-h-[80vh] overflow-x-hidden overflow-y-auto">
+                                <!-- Close Button -->
+                                <button onclick="closeTextModal('textmodal4')" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
+
+                                <h2 class="text-2xl font-sans font-bold mb-3 text-gray-900">VOLUNTEER - Outreach for the Handicapped</h2>
+                                <p class="text-gray-700 leading-relaxed text-left ml-1">
+                                    Singapore's leading soup kitchen charity organisation, delivering free meals and other support services to the needy and marginalised. I had the opportunity to help with jobs such as cutting vegetables, peeling potatoes, washing the food and working with other volunteers. It was my way of trying to help migrant workers in need for their valuable contribution to Singapore.
+                                </p>                     
+                                <button onclick="closeTextModal('textmodal4')" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">X</button>
+                            </div>
+                        </div>
+
+                        </section>
+                    </div>
+                </section>
+                
+                </div>
+                <div class="sidebar w-2/5 p-4 rounded-lg text-center">
+                    <!-- Sidebar content - USING TAILWIND HERE -->
+                
+                    <img src="images/community.jpg" alt="Community Page Sidebar Image" class="w-full mb-4 rounded-lg">
+            
+                    <!-- Certificates inside the sidebar, using a grid -->
+                    
+                    <div class="flex justify-center items-center gap-4 p-2 overflow-hidden">
+                        
+                        <!-- Image 1 with modal -->
+                        <a href="#" onclick="openModal('images/certificates/ro.jpeg'); return false;" class="w-[180px] h-[280px] inline-block">
+                            <img src="images/certificates/ro.jpeg" alt="RO Certificate 2" class="w-24 h-24 object-contain">
+                        </a>
+                        
+                    </div>
+                    
+                    <!-- Image Modal (Place this once in your main HTML file) -->
+                    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden">
+                        <div class="group relative max-w-[90vw] max-h-[82vh] overflow-hidden">
+                          <!-- Scrollable container that shows scrollbar on hover -->
+                            <div class="overflow-y-hidden group-hover:overflow-y-auto max-h-[82vh]">
+                            <img id="modalImage" src="" class="max-w-full max-h-screen rounded-lg">
+                            </div>
+
+                        <!-- Close Button -->
+                            <button onclick="closeModal()" class="absolute top-1 right-1 bg-blue-600  text-white text-xs font-bold px-3 py-2 rounded-full shadow-lg hover:bg-slate-400 transition duration-200 z-50">
+                            ✕
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-end gap-8 mt-auto p-4">
+                        <a href="#" class="home-button font-bold !inline-block !w-auto px-6 py-2">Top</a>
+                        <a href="index.html" class="home-button font-bold !inline-block !w-auto px-6 py-2">Home</a>
+                    </div>   
+                </div>
+            </div>
+            
+            
+        </section>
+    </main>
+
+    <footer class="bg-black text-white p-4 text-center flex justify-center items-center gap-4">
+        <div class="footer-content">
+            <p>© 2023 Divyansh. All rights reserved.</p>
+            <div class="social-links">
+                <a href="your-linkedin-url" target="_blank" rel="noopener noreferrer"><img src="images/linkedin-icon.png" alt="LinkedIn" class="inline-block h-5 w-5"></a>
+                <a href="https://github.com/DivyanshChandra1729" target="_blank" rel="noopener noreferrer"><img src="images/github-icon.png" alt="GitHub" class="inline-block h-5 w-5"></a>
+                <!-- Add other social media links as needed -->
+
+                <a href="DC%20linkedin.pdf" download="Divyansh_Chandra_Resume.pdf" class="text-white no-underline hover:underline">Download CV</a>
+            </div>
+          </div>
+        </footer>
+
+        <!-- JavaScript for Modal -->
+        <script>
+            // Function to open the correct modal
+        function openTextModal(modalId) {
+            let modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.remove("hidden");
+            }
+        }
+
+        // Function to close the correct modal
+        function closeTextModal(modalId) {
+            let modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add("hidden");
+            }
+        }
+
+        // Function to close modal when clicking outside the content
+        function setupModalClose(modalId) {
+            let modal = document.getElementById(modalId);
+            if (modal) {
+                modal.addEventListener('click', function (event) {
+                    if (event.target === modal) { 
+                        closeTextModal(modalId);
+                    }
+                });
+            }
+        }
+
+        // Apply event listener for modals
+        setupModalClose("textmodal1");
+        setupModalClose("textmodal2");
+        setupModalClose("textmodal3");
+        setupModalClose("textmodal4");
+
+        </script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
