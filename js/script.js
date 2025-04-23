@@ -107,7 +107,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Image Modal Functionality
     window.openModal = function(imageSrc) { 
         document.getElementById('modalImage').src = imageSrc;
-        document.getElementById('imageModal').classList.remove('hidden');
+        const modal = document.getElementById('imageModal');
+        modal.classList.remove('hidden');
+         // Reset scroll position of the scrollable container
+        const scrollContainer = modal.querySelector('.group-hover\\:overflow-y-auto');
+         if (scrollContainer) {
+        scrollContainer.scrollTop = 0;
+        }
+
+        
     };
 
     // Function to close the modal
