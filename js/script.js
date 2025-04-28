@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const description = this.getAttribute('data-description');
             if (description) {
                 tooltip.textContent = description;
-                tooltip.style.display = 'flex';
+                tooltip.style.display = 'flex'; 
                 tooltip.style.opacity = '1';
 
                 // Position the tooltip near the hovered link
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
          // Reset scroll position of the scrollable container
         const scrollContainer = modal.querySelector('.group-hover\\:overflow-y-auto');
          if (scrollContainer) {
-        scrollContainer.scrollTop = 0;
+        scrollContainer.scrollTop = 0; 
         }
 
         
