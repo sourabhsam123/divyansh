@@ -603,6 +603,14 @@ video {
   margin-right: auto;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -797,7 +805,6 @@ img {
 /* --- Hero Section --- */
 
 #hero h1 {
-  margin-bottom: 0.25rem;
   width: 100%;
   text-align: left;
   font-size: 2.25rem;
@@ -846,7 +853,7 @@ img {
 }
 
 .hero-image img {
-  border-radius: 0.5rem;
+  border-radius: 0.375rem;
 }
 
 /* --- Keyframes --- */
