@@ -44,9 +44,9 @@
                 <div class="main-content w-3/5">
                     <section id="hero">
                         <div class="hero-text">
-                            <h1 class="text-3xl font-bold text-black mb-4 uppercase tracking-wider">EXTRA CURRICULAM :</h1>
+                            <h1 class="text-3xl font-bold text-black mb-4 uppercase tracking-wider">CO-CURRICULAM :</h1>
                             <p class="text-gray-700 leading-relaxed text-justify p-1 mt-5 ml-2">
-                                Extracurriculars have been a source of constant impetus to be a better version of myself. I have been highly active in the extra curricular sphere and made sure I am exposed to a range of tasks and initiatives that allow me to progress as a wholesome individual and not just an overtly academic student. </p>
+                                Co-curriculars have been a source of constant impetus to be a better version of myself. I have been highly active in the extra curricular sphere and made sure I am exposed to a range of tasks and initiatives that allow me to progress as a wholesome individual and not just an overtly academic student. </p>
                             <section id="highlights">
                                 
                                 <!-- <span class="font-bold text-white">Blank Line</span> -->
@@ -86,7 +86,7 @@
                                 <!-- textmodal1 Background (Overlay) -->
                                 <div id="textmodal1" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden ">
                                     <!-- Modal Content -->
-                                    <div class="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-3xl relative max-h-[80vh] overflow-x-hidden overflow-y-auto">
+                                    <div class="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-3xl relative max-h-[80vh] overflow-x-hidden group-hover:overflow-y-auto">
                                         <!-- Close Button -->
                                         <button onclick="closeTextModal('textmodal1')" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
     
@@ -107,7 +107,7 @@
                                 <!-- textmodal2 Background (Overlay) -->
                                 <div id="textmodal2" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
                                     <!-- Modal Content -->
-                                    <div class="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-3xl relative max-h-[80vh] overflow-x-hidden overflow-y-auto">
+                                    <div class="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-3xl relative max-h-[80vh] overflow-x-hidden group-hover:overflow-y-auto">
                                         <!-- Close Button -->
                                         <button onclick="closeTextModal('textmodal2')" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
     
@@ -125,7 +125,7 @@
                              <!-- textmodal3 Background (Overlay) -->
                              <div id="textmodal3" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
                                 <!-- Modal Content -->
-                                <div class="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-3xl relative max-h-[80vh] overflow-x-hidden overflow-y-auto">
+                                <div class="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-3xl relative max-h-[80vh] overflow-x-hidden group-hover:overflow-y-auto">
                                     <!-- Close Button -->
                                     <button onclick="closeTextModal('textmodal3')" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
     
@@ -140,7 +140,7 @@
                             <!-- textmodal4 Background (Overlay) -->
                             <div id="textmodal4" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
                                 <!-- Modal Content -->
-                                <div class="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-3xl relative max-h-[80vh] overflow-x-hidden overflow-y-auto">
+                                <div class="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-3xl relative max-h-[80vh] overflow-x-hidden group-hover:overflow-y-auto">
                                     <!-- Close Button -->
                                     <button onclick="closeTextModal('textmodal4')" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
     
@@ -196,7 +196,7 @@
                 <a href="https://github.com/DivyanshChandra1729" target="_blank" rel="noopener noreferrer"><img src="images/github-icon.png" alt="GitHub" class="inline-block h-5 w-5"></a>
                 <!-- Add other social media links as needed -->
 
-                <a href="DC%20linkedin.pdf" download="Divyansh_Chandra_Resume.pdf" class="text-white no-underline hover:underline">Download CV</a>
+                <a href="DC%20linkedin.pdf" target="_blank" class="text-white no-underline hover:underline">Download CV</a>
             </div>
           </div>
         </footer>
@@ -209,6 +209,10 @@ function openTextModal(modalId) {
     if (modal) {
         modal.classList.remove("hidden");
     }
+    const scrollContainer = modal.querySelector('.group-hover\\:overflow-y-auto');
+         if (scrollContainer) {
+        scrollContainer.scrollTop = 0;
+        }
 }
 
 // Function to close the correct modal

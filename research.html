@@ -26,8 +26,7 @@
                         <li><a href="cocurricular.html"  data-description="SAH-PATHYAKRAM is a Sanskrit word meaning &quot; Co-curricular - to excel in Co-curricular activities&quot;." data-english="Co-curricular" data-mission="Showcasing my Co-curricular accomplishments." data-color="#fff">SAH-PATHYAKRAM</a></li>
                         <li><a href="research.html"  data-description="ANUSANDHAN is a Sanskrit word meaning &quot; Research - to find the unknown &quot;." data-english="Research" data-mission="Somewhere, something incredible is waiting to be known." data-color="#fff" class="active">ANUSANDHAN</a></li>
                         <li><a href="internship.html"  data-description="PRASHIKSHAN is a Sanskrit word meaning &quot; Internship - A professional learning experience offering meaningful, practical work &quot;." data-english="Internship" data-mission="Gaining experience and knowledge through internships." data-color="#fff">PRASHIKSHAN</a></li>
-                        
-                        </ul>
+                    </ul>
                 </nav>
             </div>
         </header>
@@ -51,27 +50,23 @@
                                 <h2>Research Projects</h2>
                                
                                 <div class="highlight-grid grid-cols-1 mt-4 sm:grid-cols-2 md:grid-cols-4">
+                                    
                                     <!-- Example Highlight 1 -->
                                     <div onclick="openTextModal('textmodal1')" class="highlight h-48 bg-gray-300 p-4 rounded-lg shadow-md transition-transform duration-300 hover:-translate-y-2 hover:bg-blue-300 cursor-pointer">
                                         <h3 class="text-lg font-semibold">Project-1</h3>
                                         <p>Fishtank Sensor System,  real-time temperature and pH monitoring system for the school’s fish tank.</p>
-                                    </div>
-                                    <!-- <a href="research_project_1.html" class="highlight-link">
-                                    <div class="highlight h-44">
-                                        <h3>Project-1</h3>
-                                        <p>Fishtank Sensor System,  real-time temperature and pH monitoring system for the school’s fish tank.</p>
-                                    </div>
-                                    </a> -->
-                    
+                                    </div>                    
+
                                     <!-- Example Highlight 2 -->
                                     <div onclick="openTextModal('textmodal2')" class="highlight h-48 bg-gray-300 p-4 rounded-lg shadow-md transition-transform duration-300 hover:-translate-y-2 hover:bg-blue-300 cursor-pointer">
                                         <h3 class="text-lg font-semibold">Project-2</h3>
                                         <p>Advanced Natural Language Processing (NLP) model analyzing sentiment in tweets and forecasts stock market movements.</p>
                                     </div>
+
                                     <!-- Example Highlight 3 -->
                                     <div onclick="openTextModal('textmodal3')" class="highlight h-48 bg-gray-300 p-4 rounded-lg shadow-md transition-transform duration-300 hover:-translate-y-2 hover:bg-blue-300 cursor-pointer">
                                         <h3 class="text-lg font-semibold">Research Paper-1</h3>
-                                        <p>The Impact and Adoption of Artificial Intelligence in Finance and Economics: A Cross-Country Analysis.</p>
+                                        <p>The Impact and Adoption of Artificial Intelligence in Finance and Economics : A Cross-Country Analysis.</p>
                                     </div>
                                     
                                     <!-- Example Highlight 4 -->
@@ -86,7 +81,7 @@
                                 <!-- textmodal1 Background (Overlay) -->
                                 <div id="textmodal1" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
                                     <!-- Modal Content -->
-                                    <div class="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-3xl relative max-h-[80vh] overflow-x-hidden overflow-y-auto">
+                                    <div class="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-3xl relative max-h-[80vh] overflow-x-hidden group-hover:overflow-y-auto">
                                         <!-- Close Button -->
                                         <button onclick="closeTextModal('textmodal1')" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
 
@@ -114,7 +109,7 @@
                                 <!-- textmodal2 Background (Overlay) -->
                                 <div id="textmodal2" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
                                     <!-- Modal Content -->
-                                    <div class="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-3xl relative max-h-[80vh] overflow-x-hidden overflow-y-auto">
+                                    <div class="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-3xl relative max-h-[80vh] overflow-x-hidden group-hover:overflow-y-auto">
                                         <!-- Close Button -->
                                         <button onclick="closeTextModal('textmodal2')" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
 
@@ -125,6 +120,25 @@
                                         <p class="text-gray-700 leading-relaxed text-left ml-1">
                                             For my final project, I developed an advanced Natural Language Processing (NLP) model that analyzes sentiment in tweets and forecasts stock market movements—predicting whether a stock should be bought, sold, or held based on social media sentiment. The process involved handling massive datasets, optimizing machine learning models, and validating predictions, strengthening my Python proficiency, data analysis skills, and model refinement abilities. More importantly, it deepened my understanding of AI’s intersection with finance, reinforcing my passion for leveraging technology to drive impactful change.
                                         </p>
+                                        <div class="flex justify-center mt-4">
+                                            <a href="#" onclick="openModal('images/certificates/ai_cert.jpg'); return false;" class="inline-block transform transition duration-300 hover:scale-110 hover:shadow-lg">
+                                              <img src="images/certificates/ai_cert.jpg" alt="ai Certificate 1" class="w-24 h-24 object-contain rounded-md">
+                                            </a>
+                                        </div>
+                                        <!-- Image Modal (Place this once in your main HTML file) -->
+                                        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden">
+                                            <div class="group relative max-w-[90vw] max-h-[82vh] overflow-hidden">
+                                            <!-- Scrollable container that shows scrollbar on hover -->
+                                            <div class="overflow-y-hidden group-hover:overflow-y-auto max-h-[82vh]">
+                                                <img id="modalImage" src="" class="max-w-full max-h-screen rounded-lg">
+                                            </div>
+                                        
+                                            <!-- Close Button -->
+                                            <button onclick="closeModal()" class="absolute top-1 right-1 bg-blue-600 text-white text-xs font-bold px-3 py-2 rounded-full shadow-lg hover:bg-slate-400 transition duration-200 z-50">
+                                                ✕
+                                            </button>
+                                            </div>
+                                        </div>
                                         
                                         <button onclick="closeTextModal('textmodal2')" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">X</button>
                                     </div>
@@ -132,26 +146,35 @@
                              <!-- textmodal3 Background (Overlay) -->
                              <div id="textmodal3" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
                                 <!-- Modal Content -->
-                                <div class="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-3xl relative max-h-[80vh] overflow-x-hidden overflow-y-auto">
+                                <div class="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-3xl relative max-h-[80vh] overflow-x-hidden group-hover:overflow-y-auto">
                                     <!-- Close Button -->
                                     <button onclick="closeTextModal('textmodal3')" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
 
-                                    <h2 class="text-2xl font-sans font-bold mb-3 text-gray-900">The Impact and Adoption of Artificial Intelligence in Finance and Economics: A Cross-Country Analysis</h2>
+                                    <h2 class="text-2xl font-sans font-bold mb-3 text-gray-900">The Impact and Adoption of Artificial Intelligence in Finance and Economics  : A Cross-Country Analysis</h2>
                                     <p class="text-gray-700 leading-relaxed text-left ml-1">
-                                        I authored a research paper titled The Impact and Adoption of Artificial Intelligence in Finance and Economics: A Cross-Country Analysis, with Dr. Mudasir Younis providing valuable guidance throughout the process. The paper delves into the evolving role of artificial intelligence within the financial and economic sectors, examining how AI is being adopted across different countries. It focuses on identifying the factors that influence its integration, as well as the challenges that countries face in leveraging this technology effectively.
+                                        I authored a research paper titled The Impact and Adoption of Artificial Intelligence in Finance and Economics: A Cross-Country Analysis, with Dr. Mudasir Younis providing valuable guidance throughout the process. The paper delves into the evolving role of artificial intelligence within the financial and economic sectors, examining how AI is being adopted across different countries. It focuses on identifying the factors that influence its integration, as well as the challenges that countries face in leveraging this technology effectively. 
                                     </p>
                                     <p class="text-gray-700 leading-relaxed text-left ml-1">
-                                        The paper has been submitted for peer review, and one of the journals—(to be confirmed)—has accepted it for publication, with others currently reviewing it. The abstract offers a concise overview of the key discussions presented in the paper.
+                                        The paper has been submitted for peer review, and Springer has accepted it for publication, with others currently reviewing it. The abstract offers a concise overview of the key discussions presented in the paper.
                                     </p>
                                     <p class="text-gray-700 leading-relaxed text-left ml-1">
                                         Through this research, I gained a deeper understanding of the research process itself, from data collection and analysis to the formulation of hypotheses and critical discussions. This experience allowed me to refine my analytical skills and better understand the intricacies involved in producing scholarly work.
                                     </p>
-                                    <p class="text-gray-900 text-2xl font-sans font-bold mb-3  leading-relaxed text-left ml-1">
+                                    <p class="text-gray-700 leading-relaxed text-left ml-1">
+                                        View Research Paper below :
+                                    </p>
+                                    
+                                    <div class="flex justify-center mt-4">
+                                        <a href="images/certificates/research_paper.pdf" target="_blank">
+                                          <img src="images/certificates/research_paper.jpg" alt="research paper Certificate 1" class="w-24 h-24 object-contain rounded-md">
+                                        </a>
+                                    </div>
+                                    <!-- <p class="text-gray-900 text-2xl font-sans font-bold mb-3  leading-relaxed text-left ml-1">
                                         Abstract : 
                                     </p>
                                     <p class="text-gray-700 leading-relaxed text-left ml-1">
                                         Artificial intelligence (AI) has rapidly evolved to play a transformative role in finance and economics, with applications ranging from predictive analytics to customer personalization and blockchain technology. This paper explores AI's perceived impact in these areas through a cross-country survey conducted in India, Singapore, Pakistan, and Türkiye, evaluating perceptions of AI's benefits, concerns, and anticipated adoption timeline. Employing Non-Metric Multidimensional Scaling (NMDS) and country-based analysis, the study reveals significant demographic and regional trends. Results indicate broad optimism toward AI’s potential, with country-specific concerns around job displacement, data privacy, and ethical implications. Findings suggest a need for balanced AI policy frameworks that accommodate rapid adopters and cautious integrators alike. This paper provides a comprehensive overview of AI's evolving role in finance, contributing valuable insights for policymakers and industry leaders.
-                                    </p>
+                                    </p> -->
 
                                     <button onclick="closeTextModal('textmodal3')" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">X</button>
                                 </div>
@@ -180,7 +203,7 @@
                     <a href="https://github.com/DivyanshChandra1729" target="_blank" rel="noopener noreferrer"><img src="images/github-icon.png" alt="GitHub" class="inline-block h-5 w-5"></a>
                     <!-- Add other social media links as needed -->
     
-                    <a href="DC%20linkedin.pdf" download="Divyansh_Chandra_Resume.pdf" class="text-white no-underline hover:underline">Download CV</a>
+                    <a href="DC%20linkedin.pdf" target="_blank" class="text-white no-underline hover:underline">Download CV</a>
                 </div>
               </div>
             </footer>
@@ -191,6 +214,10 @@
             let modal = document.getElementById(modalId);
             if (modal) {
                 modal.classList.remove("hidden");
+            }
+            const scrollContainer = modal.querySelector('.group-hover\\:overflow-y-auto');
+            if (scrollContainer) {
+            scrollContainer.scrollTop = 0; 
             }
         }
 
