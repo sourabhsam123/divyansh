@@ -8,6 +8,7 @@
         <link href="./dist/output.css" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
         <!-- Google Fonts (Poppins) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -50,9 +51,22 @@
                             New beginnings are just around the corner. 
                         </p>
                         <p class="text-gray-700 leading-relaxed text-justify mt-0 mb-2 ml-2">
-                            Internships represent a pivotal step in a student's educational and professional journey, offering real-world experiences that classroom learning alone cannot provide. They help students develop practical skills, explore career paths, and build the professional networks essential for future success. An enriching internship can lay the groundwork for a rewarding career, fostering personal growth and industry readiness. Stay tuned — Something amazing is coming up. Super Excited!!!
+                            Internships represent a pivotal step in a student's educational and professional journey, offering real-world experiences that classroom learning alone cannot provide. They help students develop practical skills, explore career paths, and build the professional networks essential for future success. 
                         </p>
-
+                        <p class="text-gray-700 leading-relaxed text-justify mt-0 mb-2 ml-2">
+                            Humbled to have obtained an Internship with Agency for Science, Technology and Research (A*STAR) - Institute of Micro Electronics (IME).
+                        </p>
+                        <p class="leading-relaxed text-justify mt-8 mb-4 ml-2">
+                        <a href="https://www.a-star.edu.sg/" target="_blank" rel="noopener noreferrer">
+                        <h2 class=" text-blue-700 transition-transform duration-500 hover:-translate-y-2 hover:underline">More about A*STAR – Singapore’s premier research agency</h2>
+                        </a>
+                        </p>
+                        <p class="leading-relaxed text-justify mt-8 mb-4 ml-2">
+                        <a href="https://www.a-star.edu.sg/ime" target="_blank" rel="noopener noreferrer">
+                        <h2 class=" text-blue-700 transition-transform duration-500 hover:-translate-y-2 hover:underline">Explore A*STAR’s Institute of Microelectronics (IME)</h2>
+                        </a>
+                        </p>
+                        
                     </div>
                 </section>
                 
@@ -64,19 +78,26 @@
             
                     <!-- Certificates inside the sidebar, using a grid -->
                     
-                    <div class="flex justify-center items-center gap-4 p-2 overflow-hidden">
+                    <div class="flex justify-center items-center gap-6 p-2 overflow-hidden">
                         
                         <!-- Image 1 with modal -->
-                        <a href="#" onclick="openModal('images/certificates/ro.jpeg'); return false;" class="w-[180px] h-[260px] inline-block">
-                            <img src="images/certificates/ro.jpeg" alt="RO Certificate 1" class="w-24 h-24 object-contain">
+                        <a href="images/certificates/internship.pdf"  target="_blank" class="p-0 w-[140px] h-[200px] inline-block transition-transform duration-300 hover:-translate-y-2">
+                            <img src="images/certificates/internship.jpeg" alt="RO Certificate 1" class="w-24 h-24 object-contain">
                         </a>
                         <!-- Image 2 with modal -->
-                        <a href="#" onclick="openModal('images/certificates/igcse1.jpeg'); return false;" class="w-[180px] h-[260px] inline-block">
-                            <img src="images/certificates/igcse1.jpeg" alt="Certificate 2" class="w-24 h-24 object-contain">
+                        <a href="#" onclick="return false;" class="p-0 w-[140px] h-[200px] inline-block transition-transform duration-300 hover:-translate-y-2">
+                            <img src="images/certificates/a-4_blank.jpeg" alt="RO Certificate 1" class="w-24 h-24 object-contain">
                         </a>
                         
-                    </div>  
-                    
+                    </div> 
+
+                    <!-- ************************************************************************************************
+                    This below section is for images modals if instead of pdf we have images of certificates then use 
+                     these function for displaying them, see the music and community page code 
+                     specially focus on <div class="sidebar w-2/5 p-4 rounded-lg text-center"> this section contains the code 
+                        ***************************************************************************************************
+                    -->
+
                     <div class="relative max-w-[90vw] max-h-[82vh] overflow-y-auto">
                         <!-- Image Modal (Place this once in your main HTML file) -->
                         <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden">
@@ -94,8 +115,8 @@
                         </div>
 
                     <div class="flex justify-end gap-8 mt-auto p-4">
-                        <a href="#" class="home-button font-bold !inline-block !w-auto px-6 py-2">Top</a>
-                        <a href="index.html" class="home-button font-bold !inline-block !w-auto px-6 py-2">Home</a>
+                        <a href="#" class="home-button font-bold !inline-block !w-auto px-6 py-2 transition-transform duration-300 hover:-translate-y-2">Top</a>
+                        <a href="index.html" class="home-button font-bold !inline-block !w-auto px-6 py-2 transition-transform duration-300 hover:-translate-y-2">Home</a>
                     </div>   
                 </div>
             </div>
@@ -104,15 +125,29 @@
         </section>
     </main>
 
-    <footer class="bg-black text-white p-4 text-center flex justify-center items-center gap-4">
-        <div class="footer-content">
-            <p>© 2023 Divyansh. All rights reserved.</p>
-            <div class="social-links">
-                <a href="your-linkedin-url" target="_blank" rel="noopener noreferrer"><img src="images/linkedin-icon.png" alt="LinkedIn" class="inline-block h-5 w-5"></a>
-                <a href="https://github.com/DivyanshChandra1729" target="_blank" rel="noopener noreferrer"><img src="images/github-icon.png" alt="GitHub" class="inline-block h-5 w-5"></a>
+    <footer class="bg-black text-white p-2 text-center flex justify-center items-center gap-4">
+        <div class="footer-content mt-0">
+            <p>© 2025-2030 Divyansh. All rights reserved.</p>
+            
+            <div class="social-links mt-2">
+                
+                <a href="https://www.facebook.com/yourprofile" target="_blank" class="social-circle facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://github.com/DivyanshChandra1729" target="_blank" class="social-circle github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/yourprofile" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-tr from-pink-300 via-red-400 to-red-700 text-white transform transition-transform duration-300 hover:scale-125">
+                <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-circle linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                  
                 <!-- Add other social media links as needed -->
 
-                <a href="DC%20linkedin.pdf" target="_blank" class="text-white no-underline hover:underline">Download CV</a>
+                <a target="_blank" class="text-white no-underline">Download CV :</a>
+                <a href="DC%20linkedin.pdf" target="_blank" class="fas fa-download transform transition-transform duration-300 hover:scale-125" style= "color: #dbcf29;">    </a>
             </div>
           </div>
         </footer>
