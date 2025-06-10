@@ -8,6 +8,7 @@
         <link href="./dist/output.css" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
         <!-- Google Fonts (Poppins) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -190,17 +191,22 @@
                         <a href="#" onclick="openModal('images/certificates/ro.jpeg'); return false;" class="w-[120px] h-[180px] inline-block">
                             <img src="images/certificates/ro.jpeg" alt="RO Certificate 1" class="w-24 h-24 object-contain">
                         </a>
-                        <!-- Image 2 with modal -->
-                        <a href="#" onclick="openModal('images/certificates/igcse1.jpeg'); return false;" class="w-[120px] h-[180px] inline-block">
-                            <img src="images/certificates/igcse1.jpeg" alt="Certificate 2" class="w-24 h-24 object-contain">
+                        <!-- ***************** IMPORTANT NoTE *******************
+                        Image 2 with modal
+                         When want to put an image for the new certificate just place the below code
+                         onclick="openModal('images/certificates/PLACEHOLDER.jpeg');return false;"
+                         and in second line also replace the image file name exactly and put the alt text also.
+                        -->
+                        <a href="#" onclick="return false;" class="w-[120px] h-[180px] inline-block">
+                            <img src="images/certificates/PLACEHOLDER.jpeg" alt="" class="w-24 h-24 object-contain border-none">
                         </a>
                         <!-- Image 3 with modal -->
-                        <a href="#" onclick="openModal('images/certificates/igcse1.jpeg'); return false;" class="w-[120px] h-[180px] inline-block">
-                            <img src="images/certificates/igcse1.jpeg" alt="Certificate 3" class="w-24 h-24 object-contain">
+                        <a href="#" onclick="return false;" class="p-0 w-[120px] h-[180px] inline-block">
+                            <img src="images/certificates/a-4_blank.jpeg" alt="" class="w-24 h-24 object-contain border-none">
                         </a>
                         <!-- Image 4 with modal -->
-                        <a href="#" onclick="openModal('images/certificates/ro.jpeg'); return false;" class="w-[120px] h-[180px] inline-block">
-                            <img src="images/certificates/ro.jpeg" alt="Certificate 4" class="w-24 h-24 object-contain">
+                        <a href="#" onclick="return false;" class="w-[120px] h-[180px] inline-block">
+                            <img src="images/certificates/PLACEHOLDER.jpeg" alt="" class="w-24 h-24 object-contain border-none">
                         </a>
                     </div>  
                     
@@ -231,15 +237,29 @@
         </section>
     </main>
 
-    <footer class="bg-black text-white p-4 text-center flex justify-center items-center gap-4">
-        <div class="footer-content">
-            <p>© 2023 Divyansh. All rights reserved.</p>
-            <div class="social-links">
-                <a href="your-linkedin-url" target="_blank" rel="noopener noreferrer"><img src="images/linkedin-icon.png" alt="LinkedIn" class="inline-block h-5 w-5"></a>
-                <a href="https://github.com/DivyanshChandra1729" target="_blank" rel="noopener noreferrer"><img src="images/github-icon.png" alt="GitHub" class="inline-block h-5 w-5"></a>
+    <footer class="bg-black text-white p-2 text-center flex justify-center items-center gap-4">
+        <div class="footer-content mt-0">
+            <p>© 2025-2030 Divyansh. All rights reserved.</p>
+            
+            <div class="social-links mt-2">
+                
+                <a href="https://www.facebook.com/yourprofile" target="_blank" class="social-circle facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://github.com/DivyanshChandra1729" target="_blank" class="social-circle github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/yourprofile" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-tr from-pink-300 via-red-400 to-red-700 text-white transform transition-transform duration-300 hover:scale-125">
+                <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-circle linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                  
                 <!-- Add other social media links as needed -->
 
-                <a href="DC%20linkedin.pdf" target="_blank" class="text-white no-underline hover:underline">Download CV</a>
+                <a target="_blank" class="text-white no-underline">Download CV :</a>
+                <a href="DC%20linkedin.pdf" target="_blank" class="fas fa-download" style= "color: #dbcf29;">    </a>
             </div>
           </div>
         </footer>
